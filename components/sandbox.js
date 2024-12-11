@@ -1,29 +1,31 @@
-//arrays
-var names = ['sabzAli', 'shamsOddin', 'mEngine'];
-names.push('fafa');
-// names.push(3)
-// names[0] = 3
-var numbers = [10, 20, 30, 40];
-numbers.push(25);
-// numbers.push('gesfend')
-// numbers[1] = 'gesfend'
-var mixed = ['ken', 4, 'chun', 8, 9];
-mixed.push('yuri');
-mixed.push(0);
-mixed[0] = 3;
-// mixed.push(true)
-//objects
-var samurai = {
-    name: 'Shayan',
-    stack: 'full',
-    age: 19
-};
-samurai.age = 20,
-    samurai.name = 'AZiM';
-// samurai.age = '20'
-// samurai.skills = ['hiding', 'fighting']
-samurai = {
-    name: 'notShayan',
-    stack: 'notFull',
-    age: 20
-};
+// explicit types
+var character;
+var age;
+var isLoggedIn;
+// age = 'heh'
+age = 20;
+// isLoggedIn = 25
+isLoggedIn = true;
+// arrays
+var samurais = [];
+// samurais = [10, 20]
+samurais = ["hah", "heh"];
+samurais.push("huh"); //Wont work without initializing the array samurais (with a '= []' after defining the type)
+// union types
+var mixed = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
+var uid;
+uid = '123';
+uid = 123;
+// uid = false
+// objects
+var samuraiOne;
+samuraiOne = { name: 'E...Ali', age: 30 };
+// samuraiOne = 'hih'
+samuraiOne = []; //Array in a kind of object, thats why there isnt any type error
+var samuraiTwo;
+// samuraiTwo = { name: 'E...AliNabood', age: 35, isLoggedIn: true, skills:[]}
+samuraiTwo = { name: 'E...AliNabood', age: 35, isLoggedIn: true };

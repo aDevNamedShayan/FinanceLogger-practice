@@ -1,37 +1,45 @@
-//arrays
-let names = ['sabzAli', 'shamsOddin', 'mEngine']
+// explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
 
-names.push('fafa');
-// names.push(3)
-// names[0] = 3
+// age = 'heh'
+age = 20
 
-let numbers = [10, 20, 30, 40];
+// isLoggedIn = 25
+isLoggedIn = true;
 
-numbers.push(25)
-// numbers.push('gesfend')
-// numbers[1] = 'gesfend'
+// arrays
+let samurais: string[] = [];
 
-let mixed = ['ken', 4, 'chun', 8, 9]
+// samurais = [10, 20]
+samurais = ["hah", "heh"]
 
-mixed.push('yuri')
-mixed.push(0)
-mixed[0] = 3
-// mixed.push(true)
+samurais.push("huh") //Wont work without initializing the array samurais (with a '= []' after defining the type)
 
-//objects
-let samurai = {
-    name: 'Shayan',
-    stack: 'full',
-    age: 19
+// union types
+let mixed: (string|number|boolean)[] = []
+mixed.push('hello')
+mixed.push(20)
+mixed.push(false)
+console.log(mixed)
+
+let uid: string|number
+uid = '123'
+uid = 123
+// uid = false
+
+// objects
+let samuraiOne: object
+samuraiOne = { name: 'E...Ali', age: 30 }
+// samuraiOne = 'hih'
+samuraiOne = [] //Array in a kind of object, thats why there isnt any type error
+
+let samuraiTwo: {
+    name: string,
+    age: number,
+    isLoggedIn: boolean
 }
 
-samurai.age = 20,
-samurai.name = 'AZiM'
-// samurai.age = '20'
-// samurai.skills = ['hiding', 'fighting']
-
-samurai = {
-    name: 'notShayan',
-    stack: 'notFull',
-    age: 20
-}
+// samuraiTwo = { name: 'E...AliNabood', age: 35, isLoggedIn: true, skills:[]}
+samuraiTwo = { name: 'E...AliNabood', age: 35, isLoggedIn: true}
