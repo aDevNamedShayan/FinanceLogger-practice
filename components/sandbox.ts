@@ -1,18 +1,26 @@
-let character = "MrMusk";
-let age = 30;
-let isFullStack = false;
+//arrays
+let names = ['sabzAli', 'shamsOddin', 'mEngine']
 
-// character = 20
-character = "Tyson"
+names.push('fafa');
+// names.push(3)
+// names[0] = 3
 
-// age = false
-age = 40;
+let numbers = [10, 20, 30, 40];
 
-// isFullStack = "yes"
-isFullStack = true
+numbers.push(25)
+// numbers.push('gesfend')
+// numbers[1] = 'gesfend'
 
-const circ = (diameter: number) => {
-    return diameter * Math.PI
+let mixed = ['ken', 4, 'chun', 8, 9]
+
+mixed.push('yuri')
+mixed.push(0)
+mixed[0] = 3
+// mixed.push(true)
+
+//objects
+let samurai = {
+    name: 'Shayan',
+    stack: 'full',
+    age: 19
 }
-
-console.log(circ(1))
