@@ -24,3 +24,14 @@ let samurai = {
     stack: 'full',
     age: 19
 }
+
+samurai.age = 20,
+samurai.name = 'AZiM'
+// samurai.age = '20'
+// samurai.skills = ['hiding', 'fighting']
+
+samurai = {
+    name: 'notShayan',
+    stack: 'notFull',
+    age: 20
+}
