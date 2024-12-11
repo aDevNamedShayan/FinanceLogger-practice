@@ -7,3 +7,7 @@ character = "Tyson";
 age = 40;
 // isFullStack = "yes"
 isFullStack = true;
+var circ = function (diameter) {
+    return diameter * Math.PI;
+};
+console.log(circ(1));

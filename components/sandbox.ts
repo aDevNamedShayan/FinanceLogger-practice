@@ -10,3 +10,9 @@ age = 40;
 
 // isFullStack = "yes"
 isFullStack = true
+
+const circ = (diameter: number) => {
+    return diameter * Math.PI
+}
+
+console.log(circ(1))
