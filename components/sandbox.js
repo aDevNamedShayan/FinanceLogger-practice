@@ -1,7 +1,9 @@
 var character = "MrMusk";
-console.log(character);
-var inputs = document.querySelectorAll("input");
-console.log(inputs);
-inputs.forEach(function (input) {
-    console.log(input);
-});
+var age = 30;
+var isFullStack = false;
+// character = 20
+character = "Tyson";
+// age = false
+age = 40;
+// isFullStack = "yes"
+isFullStack = true;

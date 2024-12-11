@@ -1,11 +1,12 @@
-const character = "MrMusk"
+let character = "MrMusk";
+let age = 30;
+let isFullStack = false;
 
-console.log(character)
+// character = 20
+character = "Tyson"
 
-const inputs = document.querySelectorAll("input")
+// age = false
+age = 40;
 
-console.log(inputs)
-
-inputs.forEach(input => {
-    console.log(input)
-})
+// isFullStack = "yes"
+isFullStack = true
