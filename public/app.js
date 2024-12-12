@@ -1,18 +1,25 @@
 "use strict";
-// this file doesnt have direct access to the html file so
-// without the ! mark its gonna give us an error cuz it thinks that maybe the querySelector wouldn't be able to pickup any <a> tag
-// but with the ! mark we force it to know that one or more <a> tags exist 
-// const anchor = document.querySelector('a')!
-// console.log(anchor.href)
-// alternative way to check if the <a> tags exists ⬇
-// if(anchor){
-//     console.log(anchor.href)
-// }
-// const form = document.querySelector('form')! //possible to select another form not our target form
-// when grabbing elements by className, it doesnt automatically detect what tag our target is, so it cant provide intellisense
-//                           so we specify it manually😊    ⬇⬇       also it doesnt need the ! mark anymore
+//  classes
+class invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client} owes $${this.amount} for ${this.details}`;
+    }
+}
+const invOne = new invoice("Ali", "Kebab", 1000);
+const invTwo = new invoice("Mestefa", "KayiPela", 5000);
+let invoices = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+invOne.client = "Mamad";
+invTwo.amount = 6000;
+console.log(invOne, invTwo);
+console.log(invoices);
 const form = document.querySelector('.new-item-form');
-// console.log(form.children)
 // inputs
 const type = document.querySelector('#type');
 const tofrom = document.querySelector('#tofrom');
