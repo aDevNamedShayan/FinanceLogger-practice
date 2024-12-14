@@ -1,2 +1,2 @@
-# HelloTypeScript
-Just for ts educational purposes
+# FinanceLogger
+Just for TypeScript educational practice
